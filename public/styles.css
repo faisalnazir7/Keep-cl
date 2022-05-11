@@ -6,10 +6,12 @@
 html {
   font-family: "Montserrat", sans-serif;
 }
-body {
-  background: #eee;
-  padding: 0 16px;
-}
+body {background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image:  linear-gradient(135deg, #f5dea2 25%, transparent 25%), linear-gradient(225deg, #f5dea2 25%, transparent 25%), linear-gradient(45deg, #f5dea2 25%, transparent 25%), linear-gradient(315deg, #f5dea2 25%, #e5e5f7 25%);
+  background-position:  21px 0, 21px 0, 0 0, 0 0;
+  background-size: 42px 42px;
+  background-repeat: repeat;}
 
 header {
   background-color: #f5ba13;
@@ -59,15 +61,18 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #f5ba13;
+  background: #f5ba13;
+  color: #fff;
   border: none;
   width: 36px;
   height: 36px;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
 }
 
-form {
+form.create-note {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
@@ -76,8 +81,8 @@ form {
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,
-form textarea {
+form.create-note input,
+form.create-note textarea {
   width: 100%;
   border: none;
   padding: 4px;
@@ -86,7 +91,7 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+form.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;

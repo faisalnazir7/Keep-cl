@@ -1,10 +1,11 @@
 import React from "react";
+import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 
 function Header() {
     return (
         <div>
             <header>
-                Keep clone
+                <EmojiObjectsIcon /> Google Keep clone
             </header>
         </div>
     )
